@@ -1,6 +1,6 @@
 class SorceryCore < ActiveRecord::Migration
   def change
-    create_table :spree/users do |t|
+    create_table :spree_people do |t|
       t.string :email,            :null => false
       t.string :crypted_password
       t.string :salt
@@ -8,6 +8,6 @@ class SorceryCore < ActiveRecord::Migration
       t.timestamps
     end
 
-    add_index :spree/users, :email, unique: true
+    add_index :spree_people, :email, unique: true
   end
 end
