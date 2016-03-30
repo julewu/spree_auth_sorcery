@@ -1,0 +1,4 @@
+zh-CN:
+  sorcery:
+    failure:
+      invalid_key_or_passowrd: 账户名或密码不正确
