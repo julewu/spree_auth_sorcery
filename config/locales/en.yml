@@ -2,3 +2,9 @@ en:
   sorcery:
     failure:
       invalid_key_or_passowrd: Invalid username or password
+    reset_password:
+      submit_successfully: Submit successfully
+      email_not_registered: The email has not been registered
+      email_subject: Reset password
+      invalid_token: Reset password token cann't be found or has been expired
+      successfully: Reset password successfully

@@ -23,6 +23,9 @@
               <%= Spree.t(:remember_me) %>
             <% end %>
           </div>
+          <div class="col-md-6 text-right">
+            <%= link_to Spree.t(:forgot_password), admin_recover_password_path %>
+          </div>
         </div>
       </div>
       <div class="form-group">

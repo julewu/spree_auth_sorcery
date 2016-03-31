@@ -2,3 +2,9 @@ zh-CN:
   sorcery:
     failure:
       invalid_key_or_passowrd: 账户名或密码不正确
+    reset_password:
+      submit_successfully: 重置密码申请提交成功
+      email_not_registered: 该邮箱还没有注册
+      email_subject: 重置密码
+      invalid_token: 找不到重置密码 token 或已过期
+      successfully: 重置密码成功
