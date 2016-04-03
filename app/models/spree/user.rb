@@ -12,5 +12,9 @@ module Spree
     validates :password_confirmation, presence: true, if: -> { new_record? || changes[:crypted_password] }
 
     validates :email, uniqueness: true
+
+    def admin?
+      has_spree_role?(:admin)
+    end
   end
 end
