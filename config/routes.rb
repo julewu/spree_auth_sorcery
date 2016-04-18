@@ -3,7 +3,7 @@ Spree::Core::Engine.routes.draw do
     get '/authorization_failure', :to => 'user_sessions#authorization_failure', :as => :unauthorized
     get '/login' => 'user_sessions#new', :as => :login
     post '/login' => 'user_sessions#create', :as => :create_new_session
-    post '/logout' => 'user_sessions#destroy', :as => :logout
+    delete '/logout' => 'user_sessions#destroy', :as => :logout
 
     get '/password/recover' => 'user_passwords#new', :as => :recover_password
     post '/password/recover' => 'user_passwords#create', :as => :reset_password
