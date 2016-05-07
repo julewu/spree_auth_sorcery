@@ -13,6 +13,8 @@ module Spree
 
     validates :email, uniqueness: true
 
+    alias_attribute :login, :email
+
     def admin?
       has_spree_role?(:admin)
     end
