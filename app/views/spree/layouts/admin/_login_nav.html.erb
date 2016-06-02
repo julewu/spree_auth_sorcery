@@ -1,14 +1,14 @@
-<% if spree_current_user %>
+<% if current_user %>
   <ul class="nav navbar-nav">
     <li class="dropdown user user-menu">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown">
         <i class="glyphicon glyphicon-user"></i>
-        <span><%= spree_current_user.email %> <i class="caret"></i></span>
+        <span><%= current_user.email %> <i class="caret"></i></span>
       </a>
       <ul class="dropdown-menu">
         <li class="user-header bg-light-blue">
           <p>
-            <%= spree_current_user.email %>
+            <%= current_user.email %>
           </p>
         </li>
         <% if spree.respond_to? :root_path %>
