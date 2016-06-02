@@ -11,7 +11,7 @@ class Spree::Admin::UserSessionsController < ApplicationController
   def create
     if @user = login(params[:email], params[:password], params[:remember_me])
       flash[:success] = Spree.t(:logged_in_succesfully)
-      redirect_back_or_default(admin_orders_path)
+      redirect_back_or_default(after_admin_logged_in_path)
     else
       flash.now[:error] = t('sorcery.failure.invalid_key_or_passowrd')
       render :new
@@ -31,5 +31,9 @@ class Spree::Admin::UserSessionsController < ApplicationController
     def redirect_back_or_default(default)
       redirect_to(session["spree_user_return_to"] || default)
       session["spree_user_return_to"] = nil
+    end
+
+    def after_admin_logged_in_path
+      admin_orders_path
     end
 end
