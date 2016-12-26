@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_auth_sorcery'
-  s.version     = '3.0.0'
+  s.version     = '3.1.0'
   s.summary     = 'Provides authentication and authorization services for use with Spree by using Sorcery and CanCan.'
   s.description = s.summary
   s.required_ruby_version = '>= 2.1.0'
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  spree_version = '~> 3.0.0'
+  spree_version = '~> 3.1.0'
 
   s.add_dependency 'spree_core', spree_version
   s.add_dependency 'sorcery', '~> 0.9.1'
