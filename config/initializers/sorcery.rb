@@ -354,6 +354,7 @@ Rails.application.config.sorcery.configure do |config|
     # Default: `nil`
     #
     # user.reset_password_expiration_period =
+    user.reset_password_expiration_period = 60*60*48
 
 
     # hammering protection, how long in seconds to wait before allowing another email to be sent.
